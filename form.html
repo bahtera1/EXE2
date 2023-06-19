@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Page 2</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h3>CAVETOWN TOUR</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Masukan Nama" id="nama"><br><br>
+
+            <label for="Gender">Gender</label><br>
+            <input type="text" placeholder="Masukan Gender" id="gender"><br><br>
+            
+
+            <label for="tanggal">Tanggal</label><br>
+            <input type="date" id="tanggal"><br><br>
+
+            <label for="day">Day</label><br>
+            <select id="Day">
+                <option value="Day 1">Day 1</option>
+                <option value="Day 2">Day 2</option>
+                <option value="Day 3">Day 1 dan 2</option>
+            </select><br><br>
+
+            <p>Tempat : </p>
+
+            <input type="radio" name="Plan" id="CAT1" value="CAT1">
+            <label for="CAT1">CAT 1</label> <br>
+            <input type="radio" name="Plan" id="CAT2" value="CAT2">
+            <label for="CAT2">CAT 2</label><br>
+            <input type="radio" name="Plan" id="CAT3" value="CAT3"> 
+            <label for="CAT3">CAT 3</label><br>
+
+
+            <label for="Jumlah">Jumlah Tiket</label><br>
+            <textarea placeholder="Masukan Jumlah Tiket" name="Jumlah" id="Jumlah" cols="30" rows="5"></textarea><br><br>
+            <label for="Contact">Contact</label><br>
+            <textarea placeholder="Masukan Contact yang dapat dihubungi" name="Contact" id="Contact" cols="30" rows="5"></textarea><br><br>
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+    <br>
+    <button class="btn btn-primary btn-next" onclick="location.href='index.html'">KEMBALI</button>
+
+    <script src="form.js"></script>
+</body>
+</html>
